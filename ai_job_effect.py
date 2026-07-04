@@ -26,4 +26,12 @@ industries=data[data['Job Status']=='Increasing']['Industry'].head(5).unique()
 print(industries)
 
 
+# Salary Benchmarks: Industry vs. Education:-
+sns.boxplot(x='Industry',y='Median Salary (USD)',data=data,hue='Required Education')
+plt.title("Salary Benchmarks: Industry vs. Education")
+plt.xlabel("Industries")
+plt.ylabel("Median Salary (USD)")
+plt.legend(loc='upper left', bbox_to_anchor=(1, 1))
+plt.show()
+
 
