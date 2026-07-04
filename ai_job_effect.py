@@ -49,3 +49,14 @@ plt.xlabel("Indsutries")
 plt.ylabel("Projected Openings (2030) ")
 plt.legend(loc='upper left',bbox_to_anchor=(1,1))
 plt.show()
+
+
+
+# A pie chart 
+filtered_data = data[(data['Industry'] == 'IT') & (data['AI Impact Level'] == 'High')]
+location_counts = filtered_data['Location'].value_counts()
+plt.figure(figsize=(8, 8))
+plt.pie(location_counts, labels=location_counts.index, autopct='%1.1f%%', startangle=140, colors=sns.color_palette('pastel'))
+
+plt.title('Distribution of IT Industries with High AI Impact by Location')
+plt.show()
