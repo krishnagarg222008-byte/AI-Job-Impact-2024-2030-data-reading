@@ -34,4 +34,10 @@ plt.ylabel("Median Salary (USD)")
 plt.legend(loc='upper left', bbox_to_anchor=(1, 1))
 plt.show()
 
-
+#Does AI Impact Level Correlate with 2024 Job Demand?
+sns.barplot(x='Industry',y='Job Openings (2024)', data=data, hue="AI Impact Level") 
+plt.title("Does AI Impact Level Correlate with 2024 Job Demand?")
+plt.xlabel("Indsutries")
+plt.ylabel("Job Openings (2024)")
+plt.legend(loc='upper left',bbox_to_anchor=(1,1))
+plt.show()
