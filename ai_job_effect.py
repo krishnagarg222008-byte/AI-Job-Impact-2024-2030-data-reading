@@ -41,3 +41,11 @@ plt.xlabel("Indsutries")
 plt.ylabel("Job Openings (2024)")
 plt.legend(loc='upper left',bbox_to_anchor=(1,1))
 plt.show()
+
+#Does AI Impact Level Correlate with 2030 Job Demand(predicted)?
+sns.barplot(x='Industry',y='Projected Openings (2030)', data=data, hue="AI Impact Level", palette='coolwarm') 
+plt.title("Does AI Impact Level Correlate with 2030 Job Demand(predicted)?")
+plt.xlabel("Indsutries")
+plt.ylabel("Projected Openings (2030) ")
+plt.legend(loc='upper left',bbox_to_anchor=(1,1))
+plt.show()
